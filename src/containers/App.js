@@ -41,7 +41,10 @@ class App extends Component {
     return (
       <div className='tc'>
         <Header />
-        <SearchBox searchChange={onSearchChange}/>
+        <label>
+          Search robots
+          <SearchBox searchChange={onSearchChange}/>
+        </label>
         <Scroll>
           { isPending ? <h1>Loading</h1> :
             <ErrorBoundry>
